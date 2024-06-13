@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.g {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+}
+
+.g::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust this value as needed */
+    width: 0;
+    height: 2px; /* Adjust this value as needed */
+    background-color: blueviolet; /* Adjust this color as needed */
+    transition: width 0.5s ease-in-out;
+}
+
+.g:hover {
+    color: blueviolet;
+}
+
+.g:hover::after {
+    width: 100%;
+}
